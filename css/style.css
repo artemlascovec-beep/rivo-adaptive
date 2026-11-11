@@ -30,3 +30,88 @@ font-family: "Roboto Serif", serif;
     box-sizing: border-box;
 }
 
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.background {
+    background: #C2EFD4;
+    max-width: 100%;
+    height: auto;
+    padding-top: 1px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-bottom: 138px;
+}
+
+.logo {
+    color: #224F34;
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo:hover { color: #31724b;}
+
+.header .nav-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 7px;
+}
+
+.header .nav-menu nav {
+    display: flex;
+    gap: 52px;
+    margin-right: 184px;
+}
+
+.header .nav-menu nav a {
+    text-transform: uppercase;
+    color: #224F34;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+.header .nav-menu nav a:hover {
+    box-shadow: 0 1px 0 #224F34;
+    color: #31724b;
+}
+
+.header .header-btn {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+}
+
+.header .header-btn img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+.header .header-btn button {
+    text-transform: uppercase;
+    color: #224F34;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #224F34;
+    padding: 11px 41px;
+    cursor: pointer;
+}
+
