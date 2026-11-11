@@ -41,6 +41,7 @@ font-family: "Roboto Serif", serif;
     max-width: 100%;
     height: auto;
     padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 /* Header Styles */
@@ -115,3 +116,49 @@ font-family: "Roboto Serif", serif;
     cursor: pointer;
 }
 
+.hero {
+    margin-bottom: 166px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1 {
+    color: #224F34;
+    font-size: 86px;
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    max-width: 650px;
+    margin-bottom: 27px;
+}
+
+.hero-text p {
+    color: #267D49;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    max-width: 565px;
+    margin-bottom: 54px;
+}
+
+.hero-text button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    cursor: pointer;
+    background: #224F34;
+    padding: 22px 60px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0px 8px 20px rgba(34, 79, 52, 0.35);
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
