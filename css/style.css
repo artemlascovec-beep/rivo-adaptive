@@ -695,6 +695,8 @@ body, html {
 }
 
 /* Designer Block Styles */
+.designer-block { margin-bottom: 249px; }
+
 .designer-block h2 {
     color: #224F34;
     text-align: center;
@@ -778,4 +780,95 @@ body, html {
     .designer-block .designer-wrapper .des-card p {
         margin-bottom: 32px;
     }
+}
+
+/* Feedback Block Styles */
+.feedback-block { margin-bottom: 193px; }
+
+.feedback-block h2 {
+    text-align: center;
+    color: #224F34;
+    font-size: 50px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    margin-bottom: 109px;
+}
+
+.feedback-block .feedback-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 37px;
+}
+
+.feedback-block .feedback-cards .feed-card {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    padding: 29px 19px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.feedback-block .feedback-cards .feed-card img {
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.feedback-block .feedback-cards .feed-card h4 {
+    font-size: 22px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 600;
+    color: #224F34;
+    margin-bottom: 30px;
+}
+
+.feedback-block .feedback-cards .feed-card p {
+    color: #6F6F6F;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+.feedback-block .feedback-cards .feed-card:hover {
+    transform: scale(1.1);
+    color: #224F34;
+    background: #C2EFD4;
+    font-family: "Poppins", sans-serif;
+}
+
+.feedback-block .feedback-cards .feed-card:hover p {
+    color: #224F34;
+}
+
+.feedback-block .switch-btn {
+    margin-top: 125px;
+    display: flex;
+    gap: 51px;
+    justify-content: center;
+}
+
+.feedback-block .switch-btn button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.feedback-block .switch-btn button:hover {
+    transform: scale(1.1);
+    background: #C2EFD4;
+}
+
+.feedback-block .switch-btn img {
+    object-fit: cover;
+    position: relative;
+    top: 2px;
 }
