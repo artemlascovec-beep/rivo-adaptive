@@ -47,6 +47,7 @@ body, html {
     height: auto;
     padding-top: 1px;
     padding-bottom: 1px;
+    margin-bottom: 114px;
 }
 
 /* Header Styles */
@@ -217,4 +218,110 @@ body, html {
         display: block;
         text-align: center;
     }
+}
+
+/* Best Selling Styles */
+.best-selling {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 185px;
+}
+
+.best-selling .title-block {
+    text-align: center;
+}
+
+.best-selling .title-block h2 {
+    color: #224F34;
+    font-size: 64px;
+    font-weight: 500;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 37px;
+}
+
+.best-selling .title-block p {
+    color: #224F34;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.best-selling-wrapper {
+    display: flex;
+    gap: 43px;
+    justify-content: space-between;
+}
+
+.best-selling-wrapper .card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.best-selling-wrapper .card img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 51px;
+}
+
+.best-selling-wrapper .card p {
+    color: #373737;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+
+.best-selling-wrapper .card .tags-best-selling {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.tags-best-selling span {
+    color: #454545;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.tags-best-selling .rating::after {
+    content: '';
+    background: url('../img/icon/star.png') no-repeat center / contain;
+    width: 24px;
+    height: 24px;
+    margin-left: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+}
+
+.best-selling button {
+    color: #224F34;
+    background: transparent;
+    border-radius: 3px;
+    border: 2px solid #224F34;
+    padding: 16px 55px;
+    cursor: pointer;
+    align-self: center;
+    width: fit-content;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.best-selling button::after {
+    content: '';
+    background: url('../img/icon/arrow.png') no-repeat center / contain;
+    display: inline-block;
+    margin-left: 18px;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
 }
