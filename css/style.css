@@ -591,7 +591,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 121px;
+    padding: 40px;
     gap: 104px;
     margin-bottom: 218px;
 }
@@ -602,6 +602,14 @@ body, html {
 }
 
 .info-block .info-img img { display: block; }
+
+.info-block .info-text {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
 
 .info-block .info-text h2 {
     color: #224F34;
@@ -663,4 +671,25 @@ body, html {
     font-weight: 500;
     cursor: pointer;
     padding: 22px 70px;
+}
+
+
+@media (max-width: 1050px) {
+    .info-block .info-img { display: none; }
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block .info-text {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-block .info-text .timer {
+        margin-bottom: 55px;
+    }
 }
