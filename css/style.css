@@ -693,3 +693,66 @@ body, html {
         margin-bottom: 55px;
     }
 }
+
+/* Designer Block Styles */
+.designer-block h2 {
+    color: #224F34;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    margin-bottom: 51px;
+}
+
+.designer-block p {
+    color: #224F34;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 72px;
+}
+
+.designer-block .designer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+}
+
+.designer-block .designer-wrapper .des-card {
+    flex-grow: 1;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.designer-block .designer-wrapper .des-card:hover {
+    transform: scale(1.1);
+}
+
+.designer-block .designer-wrapper .des-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.designer-block .designer-wrapper .des-card h3 {
+    text-align: center;
+    color: #373737;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.designer-block .designer-wrapper .des-card p {
+    color: #373737;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
