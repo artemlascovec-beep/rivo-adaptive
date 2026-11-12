@@ -30,6 +30,11 @@ font-family: "Roboto Serif", serif;
     box-sizing: border-box;
 }
 
+body, html {
+    overflow-x: hidden; 
+    width: 100%;
+}
+
 
 .container {
     max-width: 1380px;
@@ -161,4 +166,55 @@ font-family: "Roboto Serif", serif;
     display: block;
     max-width: 100%;
     object-fit: cover;
+}
+
+
+/* Адаптивность шапки и hero под планшеты и телефоны */
+
+#menu-btn {
+    display: none;
+    text-transform: uppercase;
+    color: #224F34;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #224F34;
+    padding: 11px 41px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-img { display: none; }
+    .header .nav-menu { display: none; }
+    #menu-btn { display: block; }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px; 
+        max-width: 100%; 
+    }
+
+    .hero-text p {
+        font-size: 18px; 
+        max-width: 100%;
+    }
+    
+    .hero {
+        margin-bottom: 80px;
+        display: block;
+        text-align: center;
+    }
 }
