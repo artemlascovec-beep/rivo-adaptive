@@ -872,3 +872,35 @@ body, html {
     position: relative;
     top: 2px;
 }
+
+@media (max-width: 792px) {
+    .feedback-block .feedback-cards .feed-card h4 {
+        font-size: 18px;
+    }
+
+    .feedback-block .feedback-cards .feed-card:hover {
+        transform: none;
+        color: #373737;
+        background: none;
+    }
+
+    .feedback-block .feedback-cards .feed-card:hover p {
+        color: #373737;
+    }
+
+}
+
+@media (max-width: 706px) {
+    .feedback-block .feedback-cards {
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 576px) {
+    .feedback-block h2 { font-size: 44px; }
+
+    .feedback-block .switch-btn button {
+        width: 60px;
+        height: 60px;
+    }
+}
