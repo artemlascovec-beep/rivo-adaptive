@@ -756,3 +756,26 @@ body, html {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
+
+@media (max-width: 1004px) {
+   .designer-block .designer-wrapper .des-card h3 { font-size: 25px; }
+   .designer-block .designer-wrapper .des-card p { font-size: 18px; }
+}
+
+@media (max-width: 845px) {
+    .designer-block .designer-wrapper .des-card p { font-size: 16px; }
+}
+
+@media (max-width: 706px) {
+    .designer-block .designer-wrapper {
+        flex-direction: column;
+    }
+
+    .designer-block .designer-wrapper .des-card:hover {
+        transform: none;
+    }
+
+    .designer-block .designer-wrapper .des-card p {
+        margin-bottom: 32px;
+    }
+}
