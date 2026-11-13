@@ -909,6 +909,7 @@ body, html {
 .background-footer {
     background: #224F34;
     padding-top: 105px;
+    padding-bottom: 97px;
 }
 
 footer {
@@ -1034,4 +1035,36 @@ footer {
 .logo-and-social-link {
     position: relative;
     bottom: 10px;
+}
+
+.bottom-footer {
+    margin-top: 170px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.bottom-footer .line-footer {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background: #A3F3BE;
+}
+
+.bottom-footer .footer-link {
+    display: flex;
+    gap: 35px;
+}
+
+.bottom-footer .footer-link a {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bottom-footer .footer-link a:hover {
+    color: #A3F3BE;
+    box-shadow: 0 1px 0 #A3F3BE;
 }
