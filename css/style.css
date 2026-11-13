@@ -904,3 +904,134 @@ body, html {
         height: 60px;
     }
 }
+
+/* Footer Styles */
+.background-footer {
+    background: #224F34;
+    padding-top: 105px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-and-social-link .logo {
+    color: #fff;
+    margin-bottom: 44px;
+}
+
+.logo-and-social-link p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 28px;
+}
+
+.logo-and-social-link .social-img {
+    display: flex;
+    gap: 36px;
+}
+
+.logo-and-social-link .social-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-and-social-link .social-img img:hover {
+    transform: scale(1.1);
+}
+
+.navigation {
+    display: flex;
+    gap: 144px;
+    align-items: flex-start;
+}
+
+.navigation .nav-1 .nav-link,
+.navigation .nav-2 .nav-link {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.navigation .nav-1 .nav-link a,
+.navigation .nav-2 .nav-link a {
+    color: #C2EFD4;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation .nav-1 .nav-link a:hover,
+.navigation .nav-2 .nav-link a:hover {
+    color: #629978;
+}
+
+.navigation .nav-1 p,
+.navigation .nav-2 p,
+.navigation .email-input-form p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 25px;
+}
+
+.navigation .email-input-form {
+    width: 487px;
+    max-width: 100%;
+}
+
+.navigation .email-input-form .form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navigation .email-input-form .form input {
+    outline: none;
+    padding-left: 28px;
+    padding-bottom: 13px;
+    padding-top: 14px;
+    border: 2px solid #A3F3BE;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    flex-grow: 1;
+}
+
+.navigation .email-input-form .form input::placeholder {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation .email-input-form .form button {
+    cursor: pointer;
+    border: none;
+    color: #224F34;
+    background: #A3F3BE;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 14px 21px;
+    position: relative;
+    right: 1px;
+
+}
+
+.logo-and-social-link {
+    position: relative;
+    bottom: 10px;
+}
