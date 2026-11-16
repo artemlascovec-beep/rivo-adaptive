@@ -1068,3 +1068,68 @@ footer {
     color: #A3F3BE;
     box-shadow: 0 1px 0 #A3F3BE;
 }
+
+@media (max-width: 1250px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .logo-and-social-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1025px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .logo-and-social-link {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .navigation .email-input-form {
+        grid-column: span 2; 
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    
+    .nav-1, .nav-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .nav-1 .nav-link, 
+    .nav-2 .nav-link {
+        align-items: center; 
+    }
+
+    .navigation .email-input-form .form {
+        max-width: 500px; 
+        margin: 0 auto;   
+    }
+}
