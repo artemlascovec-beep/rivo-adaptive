@@ -170,7 +170,6 @@ body, html {
 }
 
 
-/* Адаптивность шапки и hero под планшеты и телефоны */
 
 #menu-btn {
     display: none;
@@ -334,7 +333,55 @@ body, html {
     transform: scale(1.1);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1035px) {
+    .best-selling-wrapper .card p { font-size: 18px; }
+    .tags-best-selling span { font-size: 18px; }
+}
+
+@media (max-width: 870px) {
+    .best-selling-wrapper .card p { font-size: 16px; }
+    .tags-best-selling span { font-size: 16px; }
+}
+
+@media (max-width: 787px) {
+    .best-selling-wrapper .card p { font-size: 14px; }
+    .tags-best-selling span { font-size: 14px; }
+}
+
+@media (max-width: 705px) {
+    .best-selling-wrapper .card p {
+        font-size: 13px;
+    }
+
+    .tags-best-selling span {
+        font-size: 13px !important;
+    }
+
+}
+
+@media (max-width: 664px) {
+    .best-selling-wrapper .card .tags-best-selling {
+        gap: 20px;
+    }
+    
+    .best-selling-wrapper .card p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 622px) {
+    .best-selling-wrapper .card p {
+        font-size: 11px;
+    }
+
+    .best-selling-wrapper .card img {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 581px) {
     .best-selling .title-block h2 {
         font-size: 44px;
     }
@@ -565,14 +612,17 @@ body, html {
 
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
-        max-width: 318px;
+        max-width: 100%;
+        width: 100%;
         height: auto;
         margin: 0 auto;
         gap: 60px;
     }
 
     .grid-card img {
-        height: 378px; 
+        height: auto; /* ✅ Высота подстроится сама */
+        aspect-ratio: 318 / 378; /* Сохраняем пропорции как в макете */
+        object-fit: cover;
     }
 
     .grid-container .grid-card p {
@@ -691,6 +741,52 @@ body, html {
 @media (max-width: 576px) {
     .info-block .info-text .timer {
         margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 393px) {
+    .info-block {
+        padding: 25px 15px;
+        margin-bottom: 100px;
+    }
+
+    .info-block .info-text h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .info-block .info-text p {
+        font-size: 16px; 
+        margin-bottom: 30px;
+    }
+
+    
+    .info-block .info-text .timer {
+        gap: 10px; 
+        width: 100%; 
+        justify-content: center; 
+        margin-bottom: 40px;
+    }
+
+    .info-block .info-text .timer .timer-item {
+        min-width: 80px;
+        padding: 10px 15px; 
+        flex: 1; 
+    }
+
+    .info-block .info-text .timer .timer-item .number {
+        font-size: 28px; 
+    }
+
+    .info-block .info-text .timer .timer-item .label {
+        font-size: 14px; 
+    }
+
+    
+    .info-block .info-text button {
+        width: 100%; 
+        padding: 18px 0; 
+        font-size: 18px;
     }
 }
 
@@ -1132,4 +1228,129 @@ footer {
         max-width: 500px; 
         margin: 0 auto;   
     }
+}
+
+@media (max-width: 438px) {
+    .background-footer .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .nav-1, .nav-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .navigation .email-input-form {
+        grid-column: span 2; 
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+   
+    .navigation .email-input-form .form {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation .email-input-form .form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navigation .email-input-form .form button {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .bottom-footer {
+        margin-top: 50px; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .bottom-footer .footer-link {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        gap: 15px;
+        width: 100%;
+    }
+
+    .bottom-footer .footer-link a {
+        font-size: 16px; 
+    }
+
+    .bottom-footer .line-footer {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+}
+
+
+/* Adaptive of Iphone 16 */
+@media (max-width: 393px) {
+    h2 { font-size: 32px !important; }
+    h1 { font-size: 36px !important; }
+    p { font-size: 16px !important; }
+
+    .hero-text button {
+        width: 100%;
+        padding: 18px 0;
+        font-size: 18px;
+    }
+
+    .best-selling button {
+        width: 100%;
+        padding: 18px 0;
+        font-size: 18px;
+    }
+
+    .header { margin-bottom: 80px; }
+
+    .best-selling { margin-bottom: 114px; }
+
+     .grid-container .grid-card {
+        align-items: center; 
+        width: 100%;
+    }
+
+    .grid-card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto; 
+        margin-bottom: 20px;
+    }
+
+    .grid-container .grid-card p {
+        text-align: left;
+    }
+    
+    .grid-container .grid-card .tags-best-selling {
+        justify-content: center; 
+    }
+
+    .designer-block { margin-bottom: 114px; }
 }
